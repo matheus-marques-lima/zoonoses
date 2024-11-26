@@ -1,0 +1,38 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+
+    h1 {
+        font-size: 24px;
+        color: #2f9e93;
+        text-align: center;
+    }
+
+    select {
+        width: 100%;
+        padding: 2px 5px;
+        border: 2px solid #efeeee;
+        border-radius: 8px;
+        background-color: #ffffff;
+        color: #2f9e93;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            border-color: #2f9e93;
+        }
+    }
+
+    @media screen and (max-width: 912px) {
+        th, td {
+            &.cell-4, &.cell-5 {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.nav-item {
+    display: flex;
+    justify-content: center;
+
+    background: #FFFFFF;
+    padding: 25px 30px;
+
+    a {
+        color: #00A195;
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: #F2F2F2;
+    }
+
+    &.active {
+        background-color: #00A195;
+
+        a {
+            color: #FFFFFF;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        & {
+            border: #eee 1px solid;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        p {
+            display: none;
+        }
+    }
+}
